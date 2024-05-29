@@ -1,0 +1,16 @@
+# Text generation before transformers
+
+In the realm of natural language processing, generating human-like text has been a longstanding challenge. Before the introduction of transformer architecture, Recurrent Neural Networks (RNNs) stood as the dominant architecture for text generation tasks.
+
+## RNN Limitations
+
+RNNs, while groundbreaking in their time, faced limitations in terms of computing power and memory requirements when dealing with generative tasks. As the context window (the number of preceding words the model could consider) increased, the demand for computational power and memory grew exponentially, making it difficult to achieve high performance.
+
+To illustrate this, consider an RNN model predicting the next word in a sentence based on previous words. If the model only had access to one or two preceding words, its prediction accuracy would be low due to lack of context. Increasing the context window would improve accuracy but at the cost of significantly higher resource requirements.
+For example:
+
+When we input the sentence *"My painting looks dull because of the poor quality paint"* into an RNN model. Due to its limited context window, the model can only analyze a few preceding words, such as ```"My painting looks"```. It might predict the next word to be something like ```"beautiful"``` or ```"colorful"``` without considering the broader context.
+
+If the RNN could understand the whole sentence, it would recognize that *'dull'* accurately describes the painting's lackluster appearance due to the poor quality of the paint used. Without the complete context, the RNN might incorrectly predict words like *"beautiful"* and *"colorful"*.
+
+An RNN model with a limited context window may struggle to make the correct prediction without the complete context. 

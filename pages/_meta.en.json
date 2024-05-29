@@ -1,0 +1,60 @@
+{
+  "index": {
+    "type": "page",
+    "display": "hidden",
+    "theme": {
+      "layout": "raw",
+      "toc": true,
+      "footer": true
+    }
+  },
+
+  "courses": {
+    "type": "page",
+    "title": "Courses"
+  },
+  "resources": {
+    "type": "page",
+    "title": "Resources"
+  },
+  "blog": {
+    "type": "page",
+    "title": "Blog"
+  },
+  "about": {
+    "type": "page",
+    "display": "hidden",
+    "theme": {
+      "typesetting": "article"
+    }
+  },
+  "community": {
+    "title": "Company",
+    "type": "menu",
+    "items": {
+      "about": {
+        "title": "About Us",
+        "href": "/about"
+      },
+      "compitation": {
+        "title": "Hackathons",
+        "href": "/hackathons"
+      },
+      "contributing": {
+        "title": "Contributing",
+        "href": "/contributing"
+      },
+      "contact": {
+        "title": "Contact Us ↗",
+        "href": "mailto:maintainer.odl@gmail.com"
+      }
+    }
+  },
+  "404": {
+    "type": "page",
+    "theme": {
+      "timestamp": false,
+      "typesetting": "article"
+    }
+  }
+}

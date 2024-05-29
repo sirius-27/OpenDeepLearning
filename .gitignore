@@ -1,0 +1,10 @@
+# Dependencies
+.next
+/node_modules
+
+# Production
+/build
+
+# Misc
+.DS_Store
+.vscode

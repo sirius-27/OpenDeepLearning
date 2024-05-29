@@ -1,0 +1,64 @@
+import { Steps } from 'nextra/components'
+
+# Introduction to Large Language Models 
+
+Large language models (LLMs) are advanced neural networks trained on vast amounts of text data to understand and generate human-like text. These models perform exceptionally well in various natural language processing (NLP) tasks, such as text generation, question answering, summarization, and translation, showing impressive fluency and coherence. 
+
+Under the surface, LLMs work by assigning probabilities to words based on their previous encounters, estimating the likelihood of a word appearing within a larger text. This probabilistic method enables them to produce coherent and contextually appropriate sentences, paragraphs, and even longer pieces of text.
+
+LLMs are generally classified into two main types: Base LLMs and Instruction-Tuned LLMs.
+
+## Base LLMs
+
+Base LLMs are pre-trained models that are trained on extensive datasets of diverse text without specific guidelines. These models are designed to predict the next word in a sequence, effectively capturing the patterns and structures of the textual data they are trained on.
+For example:
+
+*Prompt:*
+
+```md 
+The cat sat on the
+```
+
+*Output:*
+
+```md 
+The cat sat on the mat and watched the birds outside the window.
+```
+
+### Training Process
+
+The training of base LLMs involves unsupervised learning techniques where the model is exposed to a broad range of text from books, articles, websites, and other sources. 
+This exposure enables the model to understand syntax, semantics, and even some world knowledge embedded within the text. 
+
+The result is a highly versatile model capable of generating coherent and contextually relevant text.
+
+### Applications:
+Base LLMs are used in various applications, such as:
+
+- Text generation: Creating articles, stories, and other written content.
+- Text completion: Autocompleting sentences or paragraphs.
+- Limited Instruction Adherence: May not follow explicit instructions or provide direct answers, as they are not specifically optimized for task-oriented responses.
+
+However, these models often require fine-tuning or additional training to excel in specific tasks or to follow more complex instructions effectively.
+
+## Instruction-Tuned LLMs
+
+Instruction-tuned LLMs are an advanced iteration of base LLMs that have undergone additional training specifically to understand and execute instructions given in natural language. This fine-tuning process involves supervised learning where the model is trained on a curated dataset of instruction-response pairs, allowing it to better interpret and respond to human commands.
+
+### Training Process:
+
+The instruction-tuning process typically includes supervised learning techniques, where the model is trained on datasets containing examples of instructions and the corresponding desired outputs. This additional step enables the model to follow detailed and varied instructions, improving its ability to perform specific tasks as directed by users.
+
+For example:
+
+*Prompt:*
+
+```md 
+The cat sat on the
+```
+
+*Output:*
+
+```md 
+It sounds like the beginning of a story! What happened next?
+```
