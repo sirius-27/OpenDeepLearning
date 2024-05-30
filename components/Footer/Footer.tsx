@@ -5,8 +5,8 @@ const footerData = [
   {
     title: "Learn",
     links: [
-      { name: "Courses", href: "/courses", target: "_blank" },
-      { name: "Resources", href: "/resources", target: "_blank" },
+      { name: "Courses", href: "/courses" },
+      { name: "Resources", href: "/resources" },
       { name: "Blog", href: "/blog" },
       { name: "YouTube", href: "https://www.youtube.com/@OpenDeepLearningAI", target: "_blank" }
     ]
@@ -16,7 +16,7 @@ const footerData = [
     links: [
       { name: "About Us", href: "/about" },
       { name: "Hackathons", href: "/hackathons" },
-      { name: "Sponsor", href: "#", target: "_blank" },
+      { name: "Sponsor", href: "#" },
       { name: "Contact Us", href: "mailto:maintainer.odl@gmail.com", target: "_blank" }
     ]
   },
@@ -43,7 +43,7 @@ const footerData = [
 const Footer = () => {
   return (
     <footer className="w-full">
-      <div className="container mx-auto">
+      <div className="container text-[14px] mx-auto">
         <div className="flex flex-wrap justify-between">
           <div className="w-full md:w-1/4 mb-6 md:mb-0">
             <h3 className="text-gray-500 dark:text-gray-200 mb-4">© 2023-2024 OpenDeepLearning.</h3>
