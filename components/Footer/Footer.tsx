@@ -46,7 +46,7 @@ const Footer = () => {
       <div className="container text-[14px] mx-auto">
         <div className="flex flex-wrap justify-between">
           <div className="w-full md:w-1/4 mb-6 md:mb-0">
-            <h3 className="text-gray-500 dark:text-gray-200 mb-4">© 2023-2024 OpenDeepLearning.</h3>
+            <h3 className="text-gray-500 dark:text-gray-200 mb-4">© 2023-{new Date().getFullYear()} OpenDeepLearning</h3>
           </div>
           {footerData.map((section) => (
             <div key={section.title} className="w-full md:w-1/6 mb-6 md:mb-0">

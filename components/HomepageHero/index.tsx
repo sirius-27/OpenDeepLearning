@@ -1,12 +1,45 @@
 import Link from 'next/link';
+import React from 'react';
 
 type Props = {
   version: string;
   stars: number;
 };
 
+function randomStep(step: number) {
+  return Math.random() * step * 2;
+}
+
 export function HomepageHero({ version, stars: initialStars }: Props) {
-  const stars = 10
+  const [githubstars, setStars] = React.useState(initialStars);
+
+  React.useEffect(() => {
+    let timeoutId: NodeJS.Timeout;
+    (async () => {
+      const res = await fetch('https://api.github.com/repos/OpenDeepLearningAI/OpenML-Guide');
+      const repo = await res.json();
+      const latestStars = repo.stargazers_count ?? initialStars;
+      console.log('latestStars', latestStars);
+      if (latestStars > initialStars) {
+        const diff = latestStars - initialStars;
+        const step = 1000 / diff;
+        let currentStars = initialStars;
+
+        const update = () => {
+          currentStars += 1;
+          setStars(currentStars);
+          if (currentStars < latestStars) {
+            timeoutId = setTimeout(update, randomStep(step));
+          }
+        };
+        timeoutId = setTimeout(update, randomStep(step));
+      }
+    })();
+    return () => {
+      clearTimeout(timeoutId);
+    };
+  }, [initialStars]);
+
   return (
     <div className="relative">
       <div className="absolute inset-0 bg-gradient-to-b from-transparent to-gray-300 dark:to-gray-800"></div>
@@ -45,7 +78,7 @@ export function HomepageHero({ version, stars: initialStars }: Props) {
             rel="noopener noreferrer"
             className="py-1 px-2 bg-white bg-opacity-50 text-gray-600 text-lg dark:bg-gray-900 dark:text-gray-400"
           >
-            GitHub <strong>☆{stars}</strong>
+            GitHub <strong>☆{githubstars}</strong>
           </a>
           <a
             href="#"
