@@ -19,7 +19,13 @@ import { Footer } from "./components/Footer/Footer";
 const config: DocsThemeConfig = {
   logo: (
     <>
-      <img src="/logo/logo.svg" width={30} />
+      <div className="w-[30px] h-[30px] dark:hidden">
+        <img src="/logo/logo-dark.svg" alt="OpenDeepLearning" />
+      </div>
+      <div className="w-[30px] h-[30px] hidden dark:flex">
+        <img src="/logo/logo-light.svg" alt="OpenDeepLearning" />
+      </div>
+
       <span className="text-[21px] font-semibold ml-1">
         <span> OpenDeepLearning </span>
       </span>
