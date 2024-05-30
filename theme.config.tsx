@@ -65,7 +65,7 @@ const config: DocsThemeConfig = {
       <>
         <span className="flex gap-[8.5px] h-[19px]">
           <FaGithub className="w-[18px] h-[18px] pt-[1px]" />
-          <span> Report an issue → </span>
+          <span> Report an issue </span>
         </span>
       </>
     ),
@@ -75,7 +75,7 @@ const config: DocsThemeConfig = {
       <>
         <span className="flex gap-[8.5px] h-[19px]">
           <MdEdit className="w-[18px] h-[18px] pt-[1px]" />
-          <span> Edit this page → </span>
+          <span> Edit this page </span>
         </span>
       </>
     ),
