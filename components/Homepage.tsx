@@ -3,6 +3,7 @@ import { Features } from './Features';
 import styles from './Homepage.module.css';
 import { HomepageHero } from './HomepageHero';
 import { HomepageLogos } from './HomepageLogos';
+import MarqueeList from './Marquee';
 
 export function Homepage() {
   return (
@@ -18,7 +19,8 @@ export function Homepage() {
           <img src="/demo.png" className={'imgc'} />
         </a>
         {/* <HomepageLogos /> */}
-         <Benefits />
+         {/* <Benefits /> */}
+         <MarqueeList />
         {/*<Features /> */}
       </div>
     </>

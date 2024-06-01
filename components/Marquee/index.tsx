@@ -73,7 +73,7 @@ export default function MarqueeList() {
 
     return (
         <div>
-            <div className="mb-10">
+            <div className="my-10">
                 <Marquee
                     gradientColor={isDark ? "black" : "white"}
                     speed={30}

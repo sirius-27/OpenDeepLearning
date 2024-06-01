@@ -252,8 +252,8 @@
 .links a {
   margin-right: 0.25em;
   padding: 0 0.5em;
-  background: rgba(255, 255, 255, 0.5);
-  color: hsl(204 20% 50%);
+  /* background: rgba(255, 255, 255, 0.5); */
+  /* color: hsl(204 20% 50%); */
   font-size: 1.2rem;
   font-size: min(1.2rem, max(3.5vw, 1rem));
   font-weight: 400;
@@ -262,7 +262,7 @@
 }
 
 .links a strong {
-  color: hsl(204 20% 30%);
+  /* color: hsl(204 20% 30%); */
   font-weight: 400;
   transition: all 0.2s ease;
 }
