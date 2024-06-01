@@ -46,7 +46,7 @@ export function HomepageHero({initialStars}) {
       <div className={styles.tilesBg}></div>
       <div className={styles.tiles}></div>
       <div className={styles.content}>
-        <div className={styles.badgeContainer}>
+        {/* <div className={styles.badgeContainer}>
           <a
             className={styles.badge}
             href="https://twitter.com/ReactCosmos/status/1750257520243888429"
@@ -55,8 +55,18 @@ export function HomepageHero({initialStars}) {
           >
             React Cosmos 6 is here 🎉
           </a>
+        </div> */}
+        <div className={'w-full flex justify-center mt-20'}>
+        <div
+          className={cn(
+            "group rounded-full border border-black/5 bg-neutral-100 text-base text-white transition-all ease-in hover:cursor-pointer hover:bg-neutral-200 dark:border-white/5 dark:bg-neutral-900 dark:hover:bg-neutral-800 w-max",
+          )}
+        >
+          <TextShimmer className="inline-flex items-center justify-center px-4 py-1 transition ease-out hover:text-neutral-600 hover:duration-300 hover:dark:text-neutral-400">
+            <span>✨ Welcome to OpenDeepLearning</span>
+          </TextShimmer>
         </div>
-        
+        </div>
         <h1 className={'homepage-hero-headline'}>
           A better way to <br className="sm:hidden" />
           build <br className="hidden sm:block" />
