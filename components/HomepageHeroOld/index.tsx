@@ -1,10 +1,10 @@
 import Link from 'next/link';
 import React from 'react';
 import MarqueeList from '../Marquee';
-import RetroGrid from '../../components/magicui/retro-grid';
-import TextShimmer from '../../components/magicui/animated-shiny-text';
+import RetroGrid from '../magicui/retro-grid';
+import TextShimmer from '../magicui/animated-shiny-text';
 import {cn} from '../../lib/utils';
-import Meteors from '../../components/magicui/meteors';
+import Meteors from '../magicui/meteors';
 import { IoMdStarOutline } from "react-icons/io";
 
 import StarSky from "react-star-sky";
