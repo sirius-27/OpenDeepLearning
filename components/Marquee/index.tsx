@@ -2,70 +2,62 @@ import Marquee from "react-fast-marquee";
 
 import { useTheme } from 'nextra-theme-docs';
 import { useEffect, useState } from "react";
+import Link from "next/link";
 
 type TechLogos = {
     id: number;
     logo: string;
-    darkLogo: string;
+    url: string;
 };
 
 const techlogos: TechLogos[] = [
     {
         id: 0,
-        logo: "/techlogos/macos.png",
-        darkLogo: "/techlogos/macos_dark.png",
+        logo: "/companies/Amazon.svg",
+        url:"https://www.amazon.com"
     },
     {
         id: 1,
-        logo: "/techlogos/ios.png",
-        darkLogo: "/techlogos/ios_dark.png",
+        logo: "/companies/Anthropic.svg",
+        url:"https://www.anthropic.com"
     },
     {
         id: 2,
-        logo: "/techlogos/windows.png",
-        darkLogo: "/techlogos/windows_dark.png",
+        logo: "/companies/bytedance.svg",
+        url:"https://www.bytedance.com"
     },
     {
         id: 3,
-        logo: "/techlogos/android.png",
-        darkLogo: "/techlogos/android_dark.png",
+        logo: "/companies/google.svg",
+        url:"https://www.google.com"
     },
     {
         id: 4,
-        logo: "/techlogos/Linux.png",
-        darkLogo: "/techlogos/Linux_dark.png",
+        logo: "/companies/Microsoft.svg",
+        url:"https://www.microsoft.com"
     },
     {
-        id: 4,
-        logo: "/techlogos/Linux.png",
-        darkLogo: "/techlogos/Linux_dark.png",
+        id: 5,
+        logo: "/companies/NVIDIA.svg",
+        url:"https://www.nvidia.com"
     },
     {
-        id: 4,
-        logo: "/techlogos/Linux.png",
-        darkLogo: "/techlogos/Linux_dark.png",
+        id: 6,
+        logo: "/companies/OpenAI.svg",
+        url:"https://www.openai.com"
     },
     {
-        id: 4,
-        logo: "/techlogos/Linux.png",
-        darkLogo: "/techlogos/Linux_dark.png",
+        id: 7,
+        logo: "/companies/Scale.svg",
+        url:"https://www.scale.com"
     },
     {
-        id: 4,
-        logo: "/techlogos/Linux.png",
-        darkLogo: "/techlogos/Linux_dark.png",
-    },
-    {
-        id: 4,
-        logo: "/techlogos/Linux.png",
-        darkLogo: "/techlogos/Linux_dark.png",
-    },
-    {
-        id: 4,
-        logo: "/techlogos/Linux.png",
-        darkLogo: "/techlogos/Linux_dark.png",
-    },
+        id: 8,
+        logo: "/companies/MISTRAL.svg",
+        url:"https://mistral.ai/"
+    }
 ];
+
 
 export default function MarqueeList() {
     // const config = useConfig();
@@ -81,18 +73,18 @@ export default function MarqueeList() {
 
     return (
         <div>
-            <div className="my-0">
+            <div className="mb-10">
                 <Marquee
                     gradientColor={isDark ? "black" : "white"}
                     speed={50}
                     >
                     {techlogos.map((item, index) => (
-                        <div className="opacity-30 mx-8 hover:opacity-100 transition h-36">
+                        <Link className="opacity-30 mx-16 hover:opacity-100 transition h-max" href={item.url} key={index} target="_blank">
                             <img
-                                src={isDark ? item.logo : item.darkLogo}
-                                className="h-36 lg:h-36 inline-block max-w-none"
+                                src={item.logo}
+                                className={`h-8 lg:h-8 inline-block max-w-none ${isDark ? "" : "filter invert"}`}
                             />
-                        </div>
+                        </Link>
                     ))}
                 </Marquee>
             </div>
