@@ -1,6 +1,7 @@
 import React from 'react';
 import { LuArrowUpRight } from "react-icons/lu";
 import Banner from '../Banner';
+import NewBanner from '../NewBanner';
 
 const items = [
   {
@@ -130,7 +131,8 @@ function ResourcesList(item) {
 export default function Resource() {
     return (
         <div className='w-full flex flex-col justify-center items-center'>
-          <Banner title='Resources' description='Explore the best resources to learn machine learning and deep learning.' />
+          {/* <Banner title='Resources' description='Explore the best resources to learn machine learning and deep learning.' /> */}
+          <NewBanner title='Resources' description='Explore the best resources to learn machine learning and deep learning.' />
           <div className='nx-max-w-[90rem] nx-items-center nx-justify-end nx-gap-2 nx-pl-[max(env(safe-area-inset-left),1.5rem)] nx-pr-[max(env(safe-area-inset-right),1.5rem)]'>
               <div className='flex flex-col justify-center items-start h-max w-full my-10'>
                 {

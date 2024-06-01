@@ -76,7 +76,7 @@ export default function MarqueeList() {
             <div className="mb-10">
                 <Marquee
                     gradientColor={isDark ? "black" : "white"}
-                    speed={50}
+                    speed={30}
                     >
                     {techlogos.map((item, index) => (
                         <Link className="opacity-30 mx-16 hover:opacity-100 transition h-max" href={item.url} key={index} target="_blank">

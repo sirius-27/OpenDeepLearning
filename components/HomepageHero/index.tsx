@@ -75,13 +75,13 @@ export function HomepageHero({ version, stars: initialStars }: Props) {
           </TextShimmer>
         </div>
         <h1 className="homepage-hero-headline">
-          A better way to <br className="sm:hidden" />
-          learn <br className="hidden sm:block" />
-          Deep Learning <br className="sm:hidden" />
-          knowledge.
+         Learn skills for <br className="sm:hidden" />
+         building <br className="hidden sm:block" />
+         AI-driven <br className="sm:hidden" />
+         products.
         </h1>
         <p className="mt-5 text-xl text-gray-500 dark:text-gray-400">
-            OpenDeepLearning is a free and open-source platform for learning deep learning.
+          Courses, math, code, news, community, books for building AI-driven products.
         </p>
         <div className="mt-6 mb-5 flex justify-center space-x-4">
           <Link href="/docs/getting-started">
