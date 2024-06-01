@@ -45,7 +45,7 @@ iframe {
   background-image: linear-gradient(146deg, #fff, #81878b);
 }
 
-.badge {
+/* .badge {
   padding: 0.5rem 1rem;
   border-radius: 2em;
   box-shadow: hsl(204, 10%, 75%) 0 0 0 1px inset;
@@ -86,4 +86,4 @@ iframe {
 
 .dark .badge:active {
   box-shadow: hsl(204, 10%, 25%) 0 0 0 1px inset;
-}
+} */

@@ -1,6 +1,8 @@
 import Link from 'next/link';
 import styles from './HomepageHero.module.css';
 import React from 'react';
+import TextShimmer from './magicui/animated-shiny-text';
+import { cn } from '../lib/utils';
 
 type Props = {
   stars: number;
@@ -54,6 +56,7 @@ export function HomepageHero({initialStars}) {
             React Cosmos 6 is here 🎉
           </a>
         </div>
+        
         <h1 className={'homepage-hero-headline'}>
           A better way to <br className="sm:hidden" />
           build <br className="hidden sm:block" />
