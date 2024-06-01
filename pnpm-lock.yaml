@@ -41,6 +41,9 @@ dependencies:
   react-star-sky:
     specifier: ^1.0.3
     version: 1.0.3(browserslist@4.23.0)(postcss@8.4.38)(react@18.3.1)
+  smoothscroll-polyfill:
+    specifier: ^0.4.4
+    version: 0.4.4
 
 devDependencies:
   '@types/node':
@@ -4006,6 +4009,10 @@ packages:
   /slash@3.0.0:
     resolution: {integrity: sha512-g9Q1haeby36OSStwb4ntCGGGaKsaVSjQ68fBxoQcutl5fS1vuY18H3wSt3jFyFtrkx+Kz0V1G85A4MyAdDMi2Q==}
     engines: {node: '>=8'}
+    dev: false
+
+  /smoothscroll-polyfill@0.4.4:
+    resolution: {integrity: sha512-TK5ZA9U5RqCwMpfoMq/l1mrH0JAR7y7KRvOBx0n2869aLxch+gT9GhN3yUfjiw+d/DiF1mKo14+hd62JyMmoBg==}
     dev: false
 
   /sort-keys@5.0.0:

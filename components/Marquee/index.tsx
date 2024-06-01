@@ -82,7 +82,7 @@ export default function MarqueeList() {
                         <Link className="opacity-30 mx-16 hover:opacity-100 transition h-max" href={item.url} key={index} target="_blank">
                             <img
                                 src={item.logo}
-                                className={`h-8 lg:h-8 inline-block max-w-none ${isDark ? "" : "filter invert"}`}
+                                className={`h-6 lg:h-6 inline-block max-w-none ${isDark ? "" : "filter invert"}`}
                             />
                         </Link>
                     ))}

@@ -1,0 +1,28 @@
+/* styles.module.css */
+.root {
+  padding: min(8vw, 4rem) 0;
+  padding-left: max(env(safe-area-inset-left), 1.5rem);
+  padding-right: max(env(safe-area-inset-right), 1.5rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: hsl(204, 10%, 30%);
+  opacity: 0.6;
+}
+
+.dark .root {
+  opacity: 1;
+  filter: grayscale(0.8);
+}
+
+.root svg,
+.root img {
+  flex: 1;
+  margin: 0 min(1.1vw, 1.5rem);
+  max-width: 150px;
+}
+
+.root img {
+  min-width: 0; /* https://stackoverflow.com/a/41775258 */
+  user-select: none;
+}

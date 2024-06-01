@@ -28,7 +28,8 @@
     "react-fast-marquee": "^1.6.4",
     "react-icons": "^4.12.0",
     "react-router-dom": "^6.20.0",
-    "react-star-sky": "^1.0.3"
+    "react-star-sky": "^1.0.3",
+    "smoothscroll-polyfill": "^0.4.4"
   },
   "devDependencies": {
     "@types/node": "20.9.0",
