@@ -19,19 +19,26 @@
   "dependencies": {
     "@emotion/react": "^11.11.4",
     "@emotion/styled": "^11.11.5",
+    "@h0rn0chse/night-sky": "^2.0.0",
     "next": "^14.0.2",
     "nextra": "^2.13.2",
     "nextra-theme-docs": "^2.13.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-fast-marquee": "^1.6.4",
     "react-icons": "^4.12.0",
-    "react-router-dom": "^6.20.0"
+    "react-router-dom": "^6.20.0",
+    "react-star-sky": "^1.0.3",
+    "smoothscroll-polyfill": "^0.4.4"
   },
   "devDependencies": {
     "@types/node": "20.9.0",
     "autoprefixer": "^10.4.16",
+    "clsx": "^2.1.1",
+    "framer-motion": "^11.2.10",
     "postcss": "^8.4.32",
-    "tailwindcss": "^3.3.6",
+    "tailwind-merge": "^2.3.0",
+    "tailwindcss": "^3.4.3",
     "typescript": "^5.2.2"
   }
 }

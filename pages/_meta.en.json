@@ -8,14 +8,18 @@
       "footer": true
     }
   },
-
   "courses": {
     "type": "page",
     "title": "Courses"
   },
   "resources": {
     "type": "page",
-    "title": "Resources"
+    "title": "Resources",
+    "theme": {
+      "layout": "raw",
+      "toc": false,
+      "footer": true
+    }
   },
   "blog": {
     "type": "page",
